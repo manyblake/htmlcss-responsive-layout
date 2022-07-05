@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
+  font-size: 0.75rem;
 }
 
 ul,
@@ -44,6 +45,7 @@ nav {
 
 .desktop-menu {
   display: none;
+  align-items: center;
 }
 
 .nav__hamburger {
@@ -61,6 +63,10 @@ nav {
   height: 2rem;
 }
 
+.desktop-menu .button {
+  color: black;
+}
+
 .button {
   border-radius: 2rem;
   color: black;
@@ -74,14 +80,11 @@ nav {
   padding: 0.5rem 3rem;
 }
 
-.nav__hamburger {
-  display: none;
-}
-
 .hero {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
+  margin-bottom: 4rem;
 }
 
 .card {
@@ -89,6 +92,10 @@ nav {
   color: black;
   border-radius: 2.5rem;
   padding: 2rem 1.5rem;
+}
+
+.c-card {
+  aspect-ratio: 1;
 }
 
 .card--light-blue {
@@ -101,12 +108,18 @@ nav {
 }
 
 .c-demo__description {
-  flex-basis: 50%;
+  text-align: center;
+}
+
+.demo-desc__icon {
+  color: #0084fd;
+  font-size: 5.5rem;
 }
 
 .c-demo__description h3 {
   color: #0084fd;
   padding-bottom: 2.5rem;
+  font-size: 1.75rem;
 }
 
 .c-demo__description p {
@@ -123,14 +136,63 @@ nav {
   transform: translateY(2rem);
 }
 
+.planning {
+  background-color: #9792e4;
+  color: white;
+}
+
+.planning__head {
+  margin-bottom: 2rem;
+}
+
+.planning__head h3 {
+  margin: 4rem 0 3rem;
+  font-size: 1.75rem;
+}
+
+.planning__head img {
+  margin-top: 3.5rem;
+}
+
+.planning .card h4 {
+  font-size: 1.5rem;
+}
+
+.planning .card {
+  text-align: center;
+}
+
+.planning .card i {
+  border-radius: 50%;
+  background-color: #9792e4;
+  padding: 0.5rem;
+}
+
+.planning .card p {
+  margin: 1.75rem 0 2rem;
+}
+
 /* Media Queries */
 @media screen and (min-width: 1024px) {
-  .desktop-menu {
-    display: flex;
-  }
 }
 
 @media screen and (min-width: 767px) {
+  * {
+    font-size: 1rem;
+  }
+
+  .nav__hamburger {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: flex;
+  }
+
+  .c-demo__description {
+    flex-basis: 50%;
+  }
+
   .card--get-a-demo {
     flex-direction: row;
   }
