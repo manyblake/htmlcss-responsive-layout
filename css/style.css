@@ -232,6 +232,8 @@ nav {
 /* benefits */
 .benefits {
   background-color: #9792e4;
+  padding-bottom: 3.5rem;
+  margin-bottom: 5rem;
 }
 
 .benefits h4 {
@@ -267,6 +269,47 @@ nav {
   background-color: #9792e4;
   color: white;
   padding: 0.5rem 1.5rem;
+}
+
+/* about-us */
+.about-us {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us__img-box {
+  width: 12rem;
+  position: relative;
+}
+
+.about-us h3 {
+  color: #9792e4;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.about-us h4 {
+  color: #9792e4;
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+
+.about-us p + p {
+  margin: 4rem 0;
+}
+
+.about-us__quotes {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #9792e4;
+  font-size: 4rem;
+}
+
+.about-us__body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 /* Media Queries */
@@ -320,6 +363,10 @@ nav {
 
   .benefits__row .card {
     width: calc((100% - 1.5rem) / 2);
+  }
+
+  .about-us {
+    flex-direction: row;
   }
 }
 
