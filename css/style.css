@@ -136,9 +136,12 @@ nav {
   transform: translateY(2rem);
 }
 
+/* planning */
+
 .planning {
   background-color: #9792e4;
   color: white;
+  padding-bottom: 4rem;
 }
 
 .planning__head {
@@ -172,8 +175,70 @@ nav {
   margin: 1.75rem 0 2rem;
 }
 
+/* testimonials */
+.card--purple {
+  background-color: #9792e4;
+  display: flex;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.testimonials {
+  text-align: center;
+}
+
+.testimonials__header {
+  padding: 2.5rem 0;
+}
+
+.testimonials__header h4 {
+  color: #9792e4;
+  font-size: 1.5rem;
+  padding: 2rem 0;
+}
+
+.testimonials__img-box {
+  width: 12rem;
+}
+
+.testimonials__img {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.testimonials__quote {
+  margin-bottom: 2rem;
+}
+
+.testimonials__quote::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f10d";
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.testimonials__quote::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f10e";
+  font-weight: 900;
+  font-size: 1rem;
+}
+
 /* Media Queries */
 @media screen and (min-width: 1024px) {
+  .planning {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .planning .card {
+    align-self: flex-end;
+  }
 }
 
 @media screen and (min-width: 767px) {
@@ -211,5 +276,11 @@ nav {
     flex-basis: 50%;
     display: flex;
     align-items: flex-end;
+  }
+
+  .card--purple {
+    flex-direction: row;
+    text-align: left;
+    gap: 1.5rem;
   }
 }
