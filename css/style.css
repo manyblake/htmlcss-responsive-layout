@@ -23,6 +23,7 @@ a {
 header {
   background-color: #0084fd;
   color: white;
+  margin-bottom: 3rem;
 }
 
 nav {
@@ -63,8 +64,14 @@ nav {
 
 .button {
   border-radius: 2rem;
-  color: black !important;
+  color: black;
   background-color: white;
+}
+
+.button--blue {
+  background-color: #0084fd;
+  color: white;
+  padding: 0.5rem 3rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -75,6 +82,46 @@ nav {
   .nav__hamburger {
     display: none;
   }
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: white;
+  color: black;
+  border-radius: 2.5rem;
+  padding: 2rem 1.5rem;
+}
+
+.card--get-a-demo {
+  display: flex;
+  background-color: #b5ddff;
+  flex-basis: 2;
+}
+
+.c-demo__description {
+  flex-basis: 50%;
+}
+
+.c-demo__description h3 {
+  color: #0084fd;
+  padding-bottom: 2.5rem;
+}
+
+.c-demo__description p {
+  padding-bottom: 2rem;
+}
+
+.c-demo__img {
+  flex-basis: 50%;
+}
+
+.c-demo .c-card {
+  flex-basis: 1;
 }
 
 /* @media screen and (min-width: 767px) {
