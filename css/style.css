@@ -313,6 +313,8 @@ nav {
   align-items: start;
 }
 
+/* get-started */
+
 .get-started {
   background-color: #9792e4;
   text-align: center;
@@ -358,6 +360,27 @@ nav {
 .get-started__privacy-policy {
   text-decoration: underline;
   color: white;
+}
+
+/* footer */
+footer {
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  padding: 2.5rem;
+}
+
+.footer__text {
+  margin-bottom: 4rem;
+}
+
+.footer__stupid-text {
+  display: inline-block;
+}
+
+footer a {
+  color: #9792e4;
+  text-decoration: underline;
 }
 
 /* Media Queries */
@@ -416,6 +439,14 @@ nav {
   .about-us {
     flex-direction: row;
   }
+
+  .get-started .container {
+    max-width: 560px;
+  }
+
+  footer .container {
+    max-width: 560px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -430,9 +461,5 @@ nav {
 
   .benefits__row .card {
     width: calc((100% - 3rem) / 3);
-  }
-
-  .get-started .container {
-    max-width: 560px;
   }
 }
