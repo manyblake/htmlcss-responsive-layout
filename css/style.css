@@ -44,7 +44,6 @@ nav {
 
 .desktop-menu {
   display: none;
-  align-items: center;
 }
 
 .nav__hamburger {
@@ -66,6 +65,7 @@ nav {
   border-radius: 2rem;
   color: black;
   background-color: white;
+  white-space: nowrap;
 }
 
 .button--blue {
@@ -74,14 +74,8 @@ nav {
   padding: 0.5rem 3rem;
 }
 
-@media screen and (min-width: 1024px) {
-  .desktop-menu {
-    display: flex;
-  }
-
-  .nav__hamburger {
-    display: none;
-  }
+.nav__hamburger {
+  display: none;
 }
 
 .hero {
@@ -97,10 +91,13 @@ nav {
   padding: 2rem 1.5rem;
 }
 
-.card--get-a-demo {
-  display: flex;
+.card--light-blue {
   background-color: #b5ddff;
-  flex-basis: 2;
+}
+
+.hero .card--get-a-demo {
+  display: flex;
+  flex-direction: column;
 }
 
 .c-demo__description {
@@ -117,12 +114,40 @@ nav {
 }
 
 .c-demo__img {
-  flex-basis: 50%;
+  flex-basis: 100%;
+  display: flex;
+  align-items: flex-end;
 }
 
-.c-demo .c-card {
-  flex-basis: 1;
+.c-demo__img img {
+  transform: translateY(2rem);
 }
 
-/* @media screen and (min-width: 767px) {
-} */
+/* Media Queries */
+@media screen and (min-width: 1024px) {
+  .desktop-menu {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .card--get-a-demo {
+    flex-direction: row;
+  }
+
+  .hero .card {
+    width: calc((100% - 3rem) / 3);
+  }
+
+  .hero .card--get-a-demo {
+    display: flex;
+    width: calc((100% - 1.5rem) / 3 * 2);
+    flex-direction: row;
+  }
+
+  .c-demo__img {
+    flex-basis: 50%;
+    display: flex;
+    align-items: flex-end;
+  }
+}
