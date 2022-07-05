@@ -275,6 +275,7 @@ nav {
 .about-us {
   display: flex;
   flex-direction: column;
+  margin-bottom: 9rem;
 }
 
 .about-us__img-box {
@@ -310,6 +311,53 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: start;
+}
+
+.get-started {
+  background-color: #9792e4;
+  text-align: center;
+}
+
+.get-started__subtitle {
+  padding: 3.75rem 0 1.5rem;
+  font-weight: 300;
+  color: white;
+}
+
+.get-started__title {
+  margin-bottom: 3.5rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.get-started__its-free {
+  color: #fdc15f;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.get-started__description {
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.get-started .button {
+  color: #9792e4;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.get-started__copyright {
+  color: white;
+  display: inline-block;
+  margin-bottom: 4rem;
+}
+
+.get-started__privacy-policy {
+  text-decoration: underline;
+  color: white;
 }
 
 /* Media Queries */
@@ -382,5 +430,9 @@ nav {
 
   .benefits__row .card {
     width: calc((100% - 3rem) / 3);
+  }
+
+  .get-started .container {
+    max-width: 560px;
   }
 }
