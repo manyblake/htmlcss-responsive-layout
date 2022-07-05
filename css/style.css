@@ -229,19 +229,49 @@ nav {
   font-size: 1rem;
 }
 
-/* Media Queries */
-@media screen and (min-width: 1024px) {
-  .planning {
-    display: flex;
-    gap: 1rem;
-  }
-
-  .planning .card {
-    align-self: flex-end;
-  }
+/* benefits */
+.benefits {
+  background-color: #9792e4;
 }
 
-@media screen and (min-width: 767px) {
+.benefits h4 {
+  font-size: 1.5rem;
+  padding: 4rem 0;
+  color: white;
+  text-align: center;
+}
+
+.benefits__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+
+.benefits-card__number {
+  font-size: 2rem;
+  color: #9792e4;
+}
+
+.benefits-card__title {
+  color: #9792e4;
+  font-size: 1rem;
+  padding: 1.5rem 0;
+}
+
+.benefits-card__description {
+  margin-bottom: 1.5rem;
+}
+
+.button--purple {
+  background-color: #9792e4;
+  color: white;
+  padding: 0.5rem 1.5rem;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
   * {
     font-size: 1rem;
   }
@@ -282,5 +312,28 @@ nav {
     flex-direction: row;
     text-align: left;
     gap: 1.5rem;
+  }
+
+  .benefits__row {
+    flex-direction: row;
+  }
+
+  .benefits__row .card {
+    width: calc((100% - 1.5rem) / 2);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .planning {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .planning .card {
+    align-self: flex-end;
+  }
+
+  .benefits__row .card {
+    width: calc((100% - 3rem) / 3);
   }
 }
