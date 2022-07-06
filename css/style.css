@@ -394,11 +394,15 @@ footer a {
 
   .hero .card--get-a-demo {
     width: calc((100% - 1.5rem) / 3 * 2);
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .c-demo__img {
-    flex-basis: 50%;
+    align-self: flex-end;
+  }
+
+  .c-demo__img img {
+    max-width: 50%;
   }
 
   .card--purple {
